@@ -325,11 +325,14 @@
     </a>
 </div>
 
+
 <div class="content" role="main">
+  <div #highlight *ngIf='false'> bro bro bro </div>
+
+  <button (click)="makePDF()">woah</button>
 
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
-
+  <div #highlight class="card highlight-card card-small">
     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <title>Rocket Ship</title>
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
@@ -350,11 +353,14 @@
 
   </div>
 
+  <img src="{{ imgs[0] }}" />
+  <img src="{{ imgs[1] }}" />
+
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
-  <div class="card-container">
+  <div #highlight class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
       <span>Learn Angular</span>
@@ -453,7 +459,7 @@
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer #highlight>
       Love Angular?&nbsp;
       <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
         <div class="github-star-badge">
