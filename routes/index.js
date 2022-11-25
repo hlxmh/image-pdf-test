@@ -14,8 +14,4 @@ router.put('/pdf', (req, res, next) => {
   );
 });
 
-router.get('/lol', (req, res, next) => {
-  res.send("cs")
-});
-
 module.exports = router;
