@@ -13,3 +13,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Run `npm run dev` for the express server
 
 Use `#highlight` on any elements to be captured
+
+![Alt text](image.png)
